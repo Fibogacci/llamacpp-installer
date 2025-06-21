@@ -1,0 +1,14 @@
+# Minimalna konfiguracja dla bardzo starych procesorów x86_64 bez AVX
+# Minimal configuration for very old x86_64 CPUs without AVX
+# Dla komputerów sprzed ~2011 roku bez żadnych nowoczesnych instrukcji
+
+-DGGML_AVX=OFF
+-DGGML_AVX2=OFF
+-DGGML_FMA=OFF
+-DGGML_BLAS=OFF
+-DGGML_OPENMP=OFF
+-DGGML_NATIVE=OFF
+-DGGML_LTO=OFF
+-DCMAKE_BUILD_TYPE=Release
+-DGGML_CUDA=OFF
+-DLLAMA_CURL=OFF

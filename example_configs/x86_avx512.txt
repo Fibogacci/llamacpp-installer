@@ -1,0 +1,15 @@
+# Przykładowa konfiguracja dla procesorów x86 z AVX-512
+# Dla nowszych procesorów Intel/AMD
+
+-DGGML_AVX=ON
+-DGGML_AVX2=ON
+-DGGML_AVX512=ON
+-DGGML_FMA=ON
+-DGGML_BLAS=ON
+-DGGML_BLAS_PROVIDER=OpenBLAS
+-DGGML_OPENMP=ON
+-DGGML_NATIVE=ON
+-DGGML_LTO=ON
+-DCMAKE_BUILD_TYPE=Release
+-DCMAKE_C_FLAGS="-O3 -march=native -mtune=native"
+-DCMAKE_CXX_FLAGS="-O3 -march=native -mtune=native"

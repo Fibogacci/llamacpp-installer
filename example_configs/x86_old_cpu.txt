@@ -1,0 +1,15 @@
+# Konfiguracja dla starszych procesorów x86_64 bez AVX2
+# Configuration for older x86_64 CPUs without AVX2
+# BLAS wyłączone dla uniknięcia problemów z konfiguracją na starszych systemach
+# FMA wyłączone dla procesorów bez obsługi tej instrukcji
+
+-DGGML_AVX=ON
+-DGGML_AVX2=OFF
+-DGGML_FMA=OFF
+-DGGML_BLAS=OFF
+-DGGML_OPENMP=ON
+-DGGML_NATIVE=OFF
+-DGGML_LTO=ON
+-DCMAKE_BUILD_TYPE=Release
+-DGGML_CUDA=OFF
+-DLLAMA_CURL=OFF

@@ -1,0 +1,13 @@
+# Przykładowa konfiguracja dla Raspberry Pi 5
+# Zoptymalizowana dla maksymalnej wydajności
+
+-DGGML_RPC=ON
+-DGGML_BLAS=ON
+-DGGML_BLAS_VENDOR=OpenBLAS
+-DGGML_OPENMP=ON
+-DCMAKE_C_FLAGS="-march=armv8.2-a+fp16+rcpc+dotprod -mtune=cortex-a76 -O3 -flto"
+-DCMAKE_CXX_FLAGS="-march=armv8.2-a+fp16+rcpc+dotprod -mtune=cortex-a76 -O3 -flto"
+-DGGML_NATIVE=OFF
+-DGGML_LTO=ON
+-DCMAKE_BUILD_TYPE=Release
+-DGGML_VULKAN=ON
