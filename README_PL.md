@@ -27,6 +27,8 @@ Automatyczny instalator llama.cpp z optymalizacjami sprzętowymi. Projekt wykryw
 
 ### Linux x86_64
 - **Dynamiczne** ⭐ - Automatyczne wykrywanie i optymalizacja (ZALECANE)
+  
+  ⚠️ **Uwaga:** `dynamic` działa tylko na x86_64. Dla ARM/Raspberry Pi używaj dedykowanych konfiguracji (`rpi5_8gb`, `rpi5_16gb`, `rpi4`).
 - **Standardowe** - Pełne optymalizacje AVX2 z OpenBLAS (nowsze CPU)
 - **Starsze** - Optymalizacje AVX bez AVX2 (CPU 2010-2013)
 - **Minimalne** - Podstawowe optymalizacje (bardzo stary sprzęt)

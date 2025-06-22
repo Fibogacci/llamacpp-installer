@@ -27,6 +27,8 @@ Automatic installer for llama.cpp with hardware-specific optimizations. The proj
 
 ### Linux x86_64
 - **Dynamic** ⭐ - Automatic detection and optimization (RECOMMENDED)
+  
+  ⚠️ **Warning:** `dynamic` works only on x86_64. For ARM/Raspberry Pi use dedicated configurations (`rpi5_8gb`, `rpi5_16gb`, `rpi4`).
 - **Standard** - Full AVX2 optimizations with OpenBLAS (newer CPUs)
 - **Legacy** - AVX optimizations without AVX2 (2010-2013 CPUs)  
 - **Minimal** - Basic optimizations (very old hardware)
