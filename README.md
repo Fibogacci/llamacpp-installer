@@ -39,13 +39,35 @@ Automatic installer for llama.cpp with hardware-specific optimizations. The proj
 
 ### Installation
 
+#### Direct Installation (Recommended)
 ```bash
 # Clone repository
 git clone https://github.com/fibogacci/llamacpp-installer.git
 cd llamacpp-installer
 
-# Install dependencies  
+# Install dependencies globally
 pip install -r requirements.txt
+```
+
+#### Alternative: Virtual Environment (Optional)
+If you have issues with global installation or want to isolate dependencies:
+
+```bash
+# Clone repository
+git clone https://github.com/fibogacci/llamacpp-installer.git
+cd llamacpp-installer
+
+# Create virtual environment
+python -m venv venv-llamacpp-installer
+
+# Activate virtual environment
+source venv-llamacpp-installer/bin/activate
+
+# Install dependencies in virtual environment
+pip install -r requirements.txt
+
+# To deactivate virtual environment (after finishing work)
+deactivate
 ```
 
 ### Usage

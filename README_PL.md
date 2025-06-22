@@ -39,13 +39,35 @@ Automatyczny instalator llama.cpp z optymalizacjami sprzętowymi. Projekt wykryw
 
 ### Instalacja
 
+#### Instalacja bezpośrednia (zalecana)
 ```bash
 # Sklonuj repozytorium
 git clone https://github.com/fibogacci/llamacpp-installer.git
 cd llamacpp-installer
 
-# Zainstaluj zależności
+# Zainstaluj zależności globalnie
 pip install -r requirements.txt
+```
+
+#### Alternatywnie: środowisko wirtualne (opcjonalne)
+Jeśli masz problemy z instalacją globalną lub chcesz izolować zależności:
+
+```bash
+# Sklonuj repozytorium
+git clone https://github.com/fibogacci/llamacpp-installer.git
+cd llamacpp-installer
+
+# Utwórz środowisko wirtualne
+python -m venv venv-llamacpp-installer
+
+# Aktywuj środowisko wirtualne
+source venv-llamacpp-installer/bin/activate
+
+# Zainstaluj zależności w środowisku wirtualnym
+pip install -r requirements.txt
+
+# Aby deaktywować środowisko wirtualne (po zakończeniu pracy)
+deactivate
 ```
 
 ### Użycie
